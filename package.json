@@ -1,5 +1,6 @@
 {
   "name": "my-todolist",
+  "homepage": "https://pratham-mesh.github.io/node-todo-cicd-pb-gha/",
   "version": "0.1.0",
   "dependencies": {
     "body-parser": "^1.16.0",
