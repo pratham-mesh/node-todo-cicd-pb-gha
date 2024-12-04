@@ -24,7 +24,7 @@ jobs:
        uses: actions/upload-artifact@v3
        with:
           name: poduction file
-          path: ./build
+          path: .
       
   Deploy: 
   
@@ -35,13 +35,13 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: poduction file
-          path: ./build
+          path: .
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.KEY }} #this is the key of the access token
-          publish_dir: ./build    
+          publish_dir: .  
 
     
         
